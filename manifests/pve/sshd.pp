@@ -1,11 +1,11 @@
 # Class for installing ssh on linux servers
-class puppet_homelab::pve::sshd {
+class pve::pve::sshd {
   case $::osfamily {
-    'Debian': { include puppet_homelab::pve::sshd::sshd_pve }
+    'Debian': { include pve::pve::sshd::sshd_pve }
     default: {
       case $::operatingsystem {
         'Debian': {
-          include puppet_homelab::pve::sshd::sshd_pve
+          include pve::pve::sshd::sshd_pve
           $osfamily = "Debian"
         }
       }

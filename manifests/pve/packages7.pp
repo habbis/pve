@@ -1,6 +1,6 @@
 #Class for installing pve
-class puppet_homelab::pve::packages7 {
-  include puppet_homelab::pve::pve7_list
+class pve::pve::packages7 {
+  include pve::pve::pve7_list
   package { 'proxmox-ve':
     ensure => installed,
   }

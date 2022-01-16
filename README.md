@@ -35,7 +35,7 @@ Manage xinetd.pp to redirect port 8006 to 443 .
 
 ## Facts 
 
-Puppet have facts that can gather info about the servers using puppet class puppet_homelab
+Puppet have facts that can gather info about the servers using puppet class pve
 you can put them in facts.d .
 
 
@@ -61,7 +61,7 @@ templates:
 
 ## Facts 
 
-Puppet have facts that can gather info about the servers using puppet class puppet_homelab
+Puppet have facts that can gather info about the servers using puppet class pve
 you can put them in facts.d .
 
 

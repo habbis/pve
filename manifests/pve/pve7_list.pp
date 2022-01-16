@@ -1,5 +1,5 @@
 # Class for aptsource for java
-class puppet_homelab::pve::pve7_list {
+class pve::pve::pve7_list {
   apt::source { 'pve7_repo':
     comment  => 'This repo contains pve7',
     location => 'http://download.proxmox.com/debian/pve',
