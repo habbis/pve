@@ -4,7 +4,7 @@ class pve::sshkeys (
     file { '/root/.ssh/authorized_keys':
       ensure  => file,
       backup  => false,
-      content => template("puppet_homelab/sshkeys/authorized_keys.erb"),
+      content => template("pve/sshkeys/authorized_keys.erb"),
     }
     file { '/root/.ssh': 
       ensure  => directory,
@@ -18,7 +18,7 @@ class pve::sshkeys (
     file { '/home/ansible/.ssh/authorized_keys':
       ensure  => file,
       backup  => false,
-      content => template("puppet_homelab/sshkeys/authorized_keys.erb"),
+      content => template("pve/sshkeys/authorized_keys.erb"),
     }
     file { '/home/ansible/.ssh': 
       ensure  => directory,
