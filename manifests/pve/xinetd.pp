@@ -14,6 +14,7 @@ class pve::pve::xinetd {
         name      => xinetd,
         enable    => true,
         hasstatus => false,
+        hasrestart => true,
         require   => Package['xinetd'];
     }
 
