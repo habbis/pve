@@ -16,4 +16,12 @@ class pve::pve::xinetd {
         hasstatus => false,
         require   => Package['xinetd'];
     }
+
+  exec {
+    'xinetd_restart':
+      command     => '/etc/init.d/xinetd restart',
+      refreshonly => true;
+  }
+
+
 }
