@@ -7,6 +7,12 @@ class pve::pve::packages7 {
   package { 'xinetd':
     ensure => installed,
   }
+  package { 'open-iscsi':
+    ensure => installed,
+  }
+  package { 'postfix':
+    ensure => installed,
+  }
   package { 'os-prober':
     ensure => purged,
   }
