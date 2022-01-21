@@ -17,4 +17,8 @@ class pve::pve::pve7_list {
   file { '/etc/apt/sources.list.d/pve6_repo.list':
         ensure => 'absent'
   }
+ 
+  file { '/etc/apt/sources.list.d/pve-enterprise.list':
+        ensure => 'absent'
+  }
 }
