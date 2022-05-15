@@ -14,7 +14,7 @@ class pve::pve::pve7_list {
       source => 'https://enterprise.proxmox.com/debian/proxmox-release-bullseye.gpg';
   }
 
-  file { '/etc/apt/sources.list.d/pve6_repo.list':
+  file { '/etc/apt/sources.list.d/pve7_repo.list':
         ensure => 'absent'
   }
  
